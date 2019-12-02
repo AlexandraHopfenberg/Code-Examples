@@ -1,0 +1,90 @@
+
+body{
+
+background-color: green;
+
+}
+
+#logo{
+
+	width:100vw;
+	height: 8vw;
+	padding:1vw;
+
+}
+
+#nav{
+	background-color: white;
+	width: 100vw;
+	height: 3vw;
+	text-align: center;
+	color: #AB5A1B;
+	font-family: 'Neucha', cursive;
+}
+
+#main{
+	background-color: #DCC8FE;
+	width:80vw;
+	height:40vw;
+	position: absolute;
+	top: 12vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	background-image: url("../Images/background.jpg");
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+#whoAreWe{
+	width: 30vw;
+	height:30vw;
+	background-color: white;
+	margin:5vw;
+	color: #AB5A1B;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	font-size: 1.25em;
+	padding-top: 2vw;
+
+}
+
+#FunFacts{
+	width: 20vw;
+	height: 20vw;
+	background-color: white;
+	margin:5vw;
+	color: #AB5A1B;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	position: absolute; 
+	left: 45vw;
+	top: 1vw;
+	font-size: 1.25em;
+
+}
+
+h1{
+	color: darkorange; 
+	font-family: 'Neucha', cursive;
+}
+
+header{
+
+background-color: orange;
+height: 8vw ;
+width: 100vw;
+
+}
+
+footer{
+
+	text-align: center;
+	background-color: orange;
+	height: 4vw;
+	width: 100vw;
+	font-size: 1.5em;
+	position: absolute;
+	bottom: .25vw;
+}

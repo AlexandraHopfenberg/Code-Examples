@@ -1,0 +1,114 @@
+<!-- Using a Fractional Unit vs Auto in determining column width -->
+
+
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+<body>
+
+<h1>Using Fractionals</h1>
+
+<div class="with">
+	<div class="item">Your content will wrap around the div size as needed.</div>
+	<div class="item">2</div>
+	<div class="item">3 The rain in spain falls mainly in plains.</div>
+	<div class="item">4</div>
+	<div class="item"></div>
+	<div class="item">6</div>
+	<div class="item">💩</div>
+	<div class="item">8</div>
+	<div class="item">Your content determines the height of the row in this example</div>
+	<div class="item">10</div>
+	<div class="item">11</div>
+</div>
+
+
+
+<!-- Uncomment this code and comment the above code to see the different between using auto and fraction --> 
+
+<!--
+<h1>Without using Fractionals</h1>
+<div class="without">
+	<div class="item">Your content will wrap around the div size as needed.</div>
+	<div class="item">2</div>
+	<div class="item">3 The rain in spain falls mainly in plains.</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">💩</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+	<div class="item">11</div>
+</div>
+-->
+
+<div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item poop">💩 8.5</div>
+    <div class="item item9">9</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+    <div class="item item13">13</div>
+    <div class="item item14">14</div>
+    <div class="item item15">15</div>
+    <div class="item item16">16</div>
+    <div class="item item17">17</div>
+    <div class="item item18">18</div>
+    <div class="item item19">19</div>
+    <div class="item item20">20</div>
+    <div class="item item21">21</div>
+    <div class="item item22">22</div>
+    <div class="item item23">23</div>
+    <div class="item item24">24</div>
+    <div class="item item25">25</div>
+    <div class="item item26">26</div>
+    <div class="item item27">27</div>
+    <div class="item item28">28</div>
+    <div class="item item29">29</div>
+  </div>
+
+<style>
+	.with{
+		display: grid;
+		grid-gap: 20px;
+		/* fr (fractional unit) use this instead of percentages to avoid complicated issues down the road.  */
+		grid-template-columns: 100px 1fr 1fr; 
+
+		/*the difference between using auto and using fr unit is that auto will resize to the actual size of content */
+		/* grid-template-columns: auto 1fr 1fr; */
+	}
+
+	
+	.without{
+		display: grid;
+		grid-gap: 40px;
+
+		grid-template-columns: 100px auto auto; 
+	}
+
+	.item{
+		background-color: green;
+		color: white;
+		height: auto;
+		padding: 10px;
+	}
+
+</style>
+
+
+</body>
+</html>
+
